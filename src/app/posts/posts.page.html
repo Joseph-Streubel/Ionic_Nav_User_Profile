@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Posts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list scroll="y">
+    <ion-item *ngFor="let post of posts">
+      <ion-text>
+        <p>{{ post.date }}</p>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.details }}</p>
+        <br><br><br>
+      </ion-text>
+    </ion-item>
+  </ion-list>
+</ion-content>
+  

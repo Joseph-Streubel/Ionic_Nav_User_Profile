@@ -1,3 +1,16 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-segment [(ngModel)]="selectedTab">
+      <ion-segment-button value="/user-profile">Profile</ion-segment-button>
+    </ion-segment> -->
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <router-outlet></router-outlet>
+</ion-content>
+

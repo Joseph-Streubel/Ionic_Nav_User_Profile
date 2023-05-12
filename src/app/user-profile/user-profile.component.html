@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      User Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-avatar>
+                <img src="https://th.bing.com/th/id/R.c76bf173f5eb9d5e25eb52a18eb7e6f2?rik=TVrHYb3GnVWDrg&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f32900000%2fBruce-bruce-wayne-32932607-853-1280.jpg&ehk=by%2by6RanO7%2b1FnpbIBHC%2bat9M1T31z%2fI0Nt72DsQj7g%3d&risl=&pid=ImgRaw&r=0">
+              </ion-avatar>
+            </ion-col>
+            <ion-col size="10">
+              <ion-row>
+                <ion-col>
+                  <ion-text>Bruce Wayne</ion-text>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-text>Protector of Gotham</ion-text>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      <ion-buttons slot="end">
+        <ion-button routerLink="/user-profile/bio" [class.active]="activeTab == 'bio'">Bio</ion-button>
+        <ion-button routerLink="/user-profile/posts" [class.active]="activeTab == 'posts'">Posts</ion-button>
+        <ion-button routerLink="/user-profile/friends" [class.active]="activeTab == 'friends'">Friends</ion-button>
+        <ion-button routerLink="/user-profile/photos" [class.active]="activeTab == 'photos'">Photos</ion-button>
+      </ion-buttons>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <router-outlet></router-outlet>
+</ion-content>
+
+

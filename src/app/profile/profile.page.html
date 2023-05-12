@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-avatar>
+      <img src="https://th.bing.com/th/id/R.c76bf173f5eb9d5e25eb52a18eb7e6f2?rik=TVrHYb3GnVWDrg&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f32900000%2fBruce-bruce-wayne-32932607-853-1280.jpg&ehk=by%2by6RanO7%2b1FnpbIBHC%2bat9M1T31z%2fI0Nt72DsQj7g%3d&risl=&pid=ImgRaw&r=0">
+    </ion-avatar>
+    <ion-title>Bruce Wayne</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/bio" [class.active]="activeTab == 'bio'">Bio</ion-button>
+      <ion-button routerLink="/posts" [class.active]="activeTab == 'posts'">Posts</ion-button>
+      <ion-button routerLink="/friends" [class.active]="activeTab == 'friends'">Friends</ion-button>
+      <ion-button routerLink="/photos" [class.active]="activeTab == 'photos'">Photos</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
